@@ -1,3 +1,7 @@
+body{
+    margin: 0px;
+}
+
 header{
     padding: 0px 150px;
 }
@@ -382,6 +386,7 @@ header{
         height: 420px;
         text-align: center;
         padding-top: 150px;
+        margin: 0px;
         
     }
     .join h3{
@@ -407,6 +412,36 @@ header{
     }
     input[type="email"], input[type="submit"]{
         display: inline-block;
+        
+    }
+
+    /* responsive form */
+
+    @media screen and (max-width:576px) {
+        .join{
+            height: 276px;
+            background-size: 100% 100%;
+            padding-top: 80px;
+        }
+
+        .join h3{
+            font-size: 30px;
+        }
+        input[type="email"]{
+        width: 180px;
+        height: 40px;
+        padding-left: 20px;
+        }
+        input[type="submit"]{
+        height: 46px;
+        width: 100px;
+        background-color: orangered;
+        color: white;
+        border: none;
+        
+    
+    }
+
         
     }
     
