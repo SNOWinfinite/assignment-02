@@ -97,3 +97,62 @@ header{
         margin-top: 20px;
     }
 }
+
+/* sample styles */
+
+.sample{
+    
+}
+
+.sample-column{
+    text-align: center;
+    margin: 120px 150px 50px 150px;
+    padding: 0 126px 0 126px;
+}
+.sample-title{
+    font-weight: bold;
+    font-size: 50px;
+}
+.sample-description{
+    font-size: 22px;
+}
+.sample-plants{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0px 150px;
+    gap: 20px;
+    
+}
+.plants-title{
+    font-weight: 400;
+}
+.sample img{
+    width: 100%;
+    
+}
+.sample-plants h3{
+    text-align: center;
+}
+.sample-plants button{
+    width: 100%;
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 20px 0 20px 0;
+
+}
+
+/* responsiveness for sample */
+
+@media screen and (max-width:576px){
+    .sample-column{
+        margin: 100px 20px 40px 20px;
+        padding: 0px;
+    }
+    .sample-plants{
+        margin: 10px;
+    }
+    .sample-plants{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
